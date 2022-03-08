@@ -1,0 +1,94 @@
+1. линк до мојот профил: https://github.com/Drobarov12
+
+2. линк до репозиториумот: https://github.com/Drobarov12/SI_2022_lab1_196124
+
+3. mkdir SI_2022_lab1_196124		- креиреање на фолдерот
+   cd SI_2022_lab1_196124		- префрлување во фолдерот
+   git init				- иницијализирање на git
+
+4. git remote add origin https://github.com/Drobarov12/SI_2022_lab1_196124.git	- поврзување со github
+
+5. notepad shopping_list.txt		- креирање на фаилот 'shopping_list.txt' 
+   git add .				- додавање на фаилот 'shopping_list.txt' во состојба staging	     
+   git commit -m "Add 5 items to the shopping list"	- комитирање на сработеното 
+
+6. git commit -a -m "Add quantities to the items."	- додавање и комитирање на промените
+
+7. git branch branch1			- додавање на нова гранка 
+   git branch branch2			- додавање на нова гранка 
+
+8. git log				- листање на логовите
+commit 02847cfdf6a18b91a2cbfb55534306865904c085 (HEAD -> master, branch2, branch1)
+Author: Martin <drobarov12@yahoo.com>
+Date:   Mon Mar 7 22:16:50 2022 +0100
+
+    Add quantities to the items.
+
+commit 1acef2e70d066f0d4c2ed1eb7b4711059bef6b8d
+Author: Martin <drobarov12@yahoo.com>
+Date:   Mon Mar 7 22:15:40 2022 +0100
+
+    Add 5 items to the shopping list
+
+9. git push -u origin master		- синхронизирање со мастер гранката
+
+10.git checkout branch1			- префрлање на гранката branch1
+
+11.git commit -a -m "Change quantity of item #5"	- комитирање на промените во 'shopping_list.txt'
+
+12.git checkout master			- префрлање на гранката мастер
+
+13.git commit -a -m "Change quantity of item #2"	- комитирање на промените во 'shopping_list.txt'
+
+14.git push -u origin master		- синхронизирање на master гранката
+   git push -u origin branch1		- синхронизирање на branch1 гранката
+
+15.git checkout branch2			- префрлање на гранката branch2
+
+16.git commit -a -m "Modify item #4"	- комитирање на промените
+
+17.git log 				- листење на комитите
+commit eada45dad3892652bf8aa599f888e8ba5ff486c3 (HEAD -> branch2)
+Author: Drobarov12 <drobarovmartin@yahoo.com>
+Date:   Tue Mar 8 11:23:51 2022 +0100
+
+    Modify item #4
+
+commit 4f1fb09c8b293089f5017bdaafbba8c60646bc5f
+Author: Drobarov12 <drobarovmartin@yahoo.com>
+Date:   Tue Mar 8 11:08:36 2022 +0100
+
+    Add quantities to the items.
+
+commit b8b1d148c816b59441555687585ec7c6214544cf
+Author: Drobarov12 <drobarovmartin@yahoo.com>
+Date:   Tue Mar 8 11:07:31 2022 +0100
+
+    Add 5 items to the shopping list
+
+18.git commit --amend -m "Modify item #4 and add item #6" 	-препокиравање на последниот комит со новиот и новите промени
+
+19.git log				- листење на комитите
+commit 26fd4c647818498d5706108c876b7c07d5a899a1 (HEAD -> branch2)
+Author: Drobarov12 <drobarovmartin@yahoo.com>
+Date:   Tue Mar 8 11:23:51 2022 +0100
+
+    Modify item #4 and add item #6
+
+commit 4f1fb09c8b293089f5017bdaafbba8c60646bc5f
+Author: Drobarov12 <drobarovmartin@yahoo.com>
+Date:   Tue Mar 8 11:08:36 2022 +0100
+
+    Add quantities to the items.
+
+commit b8b1d148c816b59441555687585ec7c6214544cf
+Author: Drobarov12 <drobarovmartin@yahoo.com>
+Date:   Tue Mar 8 11:07:31 2022 +0100
+
+    Add 5 items to the shopping list
+
+20.git checkout master			- префрлање на гранката мастер
+   git merge branch1			- спојување на гранката branch1 со master со recursive strategy без никаков конфликт
+
+21.git merge branch2			- јави конфликт и неможеше да се направи automatic merge ,но со средување на конфликтот се изврши како што треба
+
