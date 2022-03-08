@@ -1,5 +1,7 @@
 computer x 1
 desk x 3
 chair x 1
-mouse x 1
-mouse pad x 3
+pen x 1
+mouse pad x 1
+keyboard x 2
+
