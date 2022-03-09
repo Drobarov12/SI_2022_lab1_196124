@@ -6,7 +6,7 @@
    cd SI_2022_lab1_196124		- префрлување во фолдерот
    git init				- иницијализирање на git
 
-4. git remote add origin https://github.com/Drobarov12/SI_2022_lab1_196124.git	- поврзување со github
+4. git clone https://github.com/Drobarov12/SI_2022_lab1_196124.git	- поврзување со github
 
 5. notepad shopping_list.txt		- креирање на фаилот 'shopping_list.txt' 
    git add .				- додавање на фаилот 'shopping_list.txt' во состојба staging	     
